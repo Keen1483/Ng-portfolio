@@ -1,1 +1,63 @@
-<p>skills works!</p>
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="row text-center mt-4 skew">
+            <h1 class="text-uppercase">compétences</h1>
+        </div>
+
+        <div class="app my-5">
+            <h2 class="text-center text-uppercase fw-bold">Développement</h2>
+            <div class="row g-4 justify-content-around w-100 text-center mt-4">
+                <div class="col-lg-6 col-md-6 languages text-center">
+                    <div class="title"><h3>Langages</h3></div>
+                    <ul class="text">
+                        <li *ngFor="let language of languages">
+                            <div>{{ language.name }}</div>
+                            <div class="bar">
+                                <div class="bar-level {{ language.level }}"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 frameworks">
+                    <div class="title"><h3>Frameworks</h3></div>
+                    <ul>
+                        <li *ngFor="let framework of frameworks">
+                            <div>{{ framework.name }}</div>
+                            <div class="bar">
+                                <div class="bar-level {{ framework.level }}"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="design my-5">
+            <h2 class="text-center text-uppercase fw-bold">Design</h2>
+            <div class="row g-4 justify-content-between w-100 text-center mt-4">
+                <div class="col-lg-6 col-md-6 languages">
+                    <div class="title"><h3>Graphics Design</h3></div>
+                    <ul class="text">
+                        <li *ngFor="let design of designs">
+                            <div>{{ design.name }}</div>
+                            <div class="bar">
+                                <div class="bar-level {{ design.level }}"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 frameworks">
+                    <div class="title"><h3>Outils</h3></div>
+                    <ul class="text">
+                        <li *ngFor="let tool of tools">
+                            <div>{{ tool.name }}</div>
+                            <div class="bar">
+                                <div class="bar-level {{ tool.level }}"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

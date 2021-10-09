@@ -1,0 +1,24 @@
+.side-menu {
+
+    .items {
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    a {
+        display: block;
+        margin-top: 2rem;
+    }
+    
+    span {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgba(#202120, 0.9);
+    }
+
+    .close {
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+    }
+}

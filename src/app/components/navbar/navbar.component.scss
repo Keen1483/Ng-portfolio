@@ -1,0 +1,55 @@
+@use '../../../sass/custom' as *;
+
+mat-toolbar {
+    background-color: #FFD642;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 0.5rem;
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: #202120;
+            }
+        }
+    }
+
+    .icon-menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .icon {
+            color: #202120;
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+
+            mat-icon {
+                font-size: 2rem;
+            }
+        }
+
+        .brand {
+            text-align: right;
+
+            a {
+                text-decoration: none;
+                color: #202120;
+            }
+        }
+    }
+}

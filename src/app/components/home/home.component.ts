@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TypographyService } from '../../services/typography.service';
+
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+    constructor(private typography: TypographyService) { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        $(document).ready(() => {
+            $('.home').css('height', this.typography.heightContentPage());
+        });
+    }
 
 }

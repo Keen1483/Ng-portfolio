@@ -1,1 +1,46 @@
-<p>navbar works!</p>
+<mat-toolbar class="navigation">
+    <div class="icon-menu" fxHide.gt-xs>
+        <div class="icon">
+            <button mat-icon-button (click)="sidenav.open()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <div class="brand">
+            <a routerLink="/">
+                <span>
+                    DBG
+                </span>
+            </a>
+        </div>
+    </div>
+    
+    <div>
+        <ul class="navigation-items">
+            <li>
+                <a class="nav-link active" routerLink="about" routerLinkActive='active'>
+                    À PROPOS
+                </a>
+            </li>
+            <li>
+                <a class="nav-link active" routerLink="experiences" routerLinkActive='active'>
+                    EXPÉRIENCES
+                </a>
+            </li>
+            <li>
+                <a class="nav-link active" routerLink="skills" routerLinkActive='active'>
+                    COMPÉTENCES
+                </a>
+            </li>
+            <li>
+                <a class="nav-link active" routerLink="projects" routerLinkActive='active'>
+                    PROJETS
+                </a>
+            </li>
+            <li>
+                <a class="nav-link active" routerLink="contact" routerLinkActive='active'>
+                    CONTACT
+                </a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

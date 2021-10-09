@@ -1,0 +1,31 @@
+<mat-nav-list class="side-menu">
+    <div class="close" (click)="sidenav.close()">
+        <i class="bi bi-x-lg"></i>
+    </div>
+    
+    <div class="items">
+        <a mat-list-item routerLink="/">
+            <span class="label">ACCUEIL</span>
+        </a>
+    
+        <a mat-list-item routerLink="/about">
+            <span class="label">À PROPOS</span>
+        </a>
+    
+        <a mat-list-item routerLink="/experiences">
+            <span class="label">EXPÉRIENCES</span>
+        </a>
+    
+        <a mat-list-item routerLink="/skills">
+            <span class="label">COMPETÉNCES</span>
+        </a>
+    
+        <a mat-list-item routerLink="/projects">
+            <span class="label">PROJETS</span>
+        </a>
+    
+        <a mat-list-item routerLink="/contact">
+            <span class="label">CONTACT</span>
+        </a>
+    </div>
+</mat-nav-list>

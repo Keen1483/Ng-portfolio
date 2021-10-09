@@ -1,1 +1,22 @@
-<p>experiences works!</p>
+<section id="portfolio" class="portfolio experiences">
+    <div class="container">
+        <div class="row text-center mt-4 skew">
+            <h1 class="text-uppercase">Expériences</h1>
+        </div>
+
+        <!-- START THE PORTFOLIO ITEMS -->
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6" *ngFor="let portfolio of portfolios; let i = index">
+                <div class="portfolio-box shadow">
+                    <img src="./assets/images/portfolio/portfolio-{{ i + 1 }}.jpg" alt="{{ portfolio.project }} image" title="{{ portfolio.project }}" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4 class=" text-dark">{{ portfolio.project }}</h4>
+                            <p class=" text-dark">{{ portfolio.category }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

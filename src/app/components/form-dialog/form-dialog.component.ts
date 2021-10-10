@@ -21,7 +21,7 @@ export class FormDialogComponent implements OnInit {
 
                 $('#sendMessage').click(function(event: any) {
                     let email = $('#emailMessage').val();
-                    let object = 'Email address:' + email;
+                    let object = 'Email address:' + email + ' / From Portfolio';
                     let message = $('#messageModal').val();
     
                     if (message !== '' && email !== '') {

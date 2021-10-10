@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TypographyService } from '../../services/typography.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -28,6 +30,8 @@ export class ContactComponent implements OnInit {
         const email = this.contactForm.get('email')?.value;
         const message: string = this.contactForm.get('message')?.value;
         const date = new Date();
+        let object = 'Email address:' + email + ' / From Portfolio';
+        $('#formContact').attr('href', 'mailto:keenndjc@gmail.com?subject=' + object + '&body=' + message);
     }
 
 }

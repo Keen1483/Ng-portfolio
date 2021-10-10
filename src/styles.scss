@@ -43,6 +43,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 
-a:hover {
-    background-color: darken(#FFD642, 10%);
+a {
+    text-decoration: none;
+    &:hover {
+        background-color: darken(#FFD642, 10%);
+    }
 }

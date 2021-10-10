@@ -18,8 +18,6 @@ export class SideMenuComponent implements OnInit {
     ngOnInit(): void {
         $(document).ready(() => {
             $('.side-menu').css('height', this.typography.heightContentPage());
-            let width = this.typography.viewport() / 2;
-            $('.side-menu').css('width', width + 'px');
         });
     }
 

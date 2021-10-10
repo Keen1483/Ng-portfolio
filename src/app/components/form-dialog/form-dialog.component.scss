@@ -1,0 +1,27 @@
+#sendMessage {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.flash-message {
+    white-space: pre-wrap;
+}
+
+a:hover {
+    background-color: white;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.chat {
+    height: fit-content;
+}
+
+.example-form {
+    margin-top: 3rem !important;
+}

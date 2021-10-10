@@ -1,0 +1,22 @@
+<div mat-dialog-content class="chat" id="contactModal">
+    <h2 class="my-3 text-center">Votre message</h2>
+    <form class="example-form">
+        <mat-form-field>
+            <input matInput type="email" id="emailMessage" placeholder="Adresse Email" required>
+        </mat-form-field>
+        <mat-form-field>
+            <textarea matInput id="messageModal" placeholder="Message" required></textarea>
+        </mat-form-field>
+        <div class="modal-footer mt-5 d-flex justify-content-between">
+            <div mat-dialog-actions>
+                <button mat-raised-button (click)="onNoClick()" class="close" color="warn">Fermer</button>
+            </div>
+            <div mat-dialog-actions>
+                <a href="#" id="sendMessage">
+                    <button mat-raised-button type="submit" color="primary">Envoyer</button>
+                </a>
+            </div>
+        </div>
+        <span class="flash-message text-secondary fst-italic lead"></span>
+    </form>
+</div>

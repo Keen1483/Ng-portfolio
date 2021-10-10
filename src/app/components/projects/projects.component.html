@@ -1,7 +1,29 @@
-<section id="projects" class="projects">
+<section id="portfolio" class="portfolio projects">
     <div class="container">
-        <div class="row text-center mt-4 skew">
+        <div class="row text-center mt-3 skew">
             <h1 class="text-uppercase">projets</h1>
         </div>
+
+        <!-- START THE PORTFOLIO ITEMS -->
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6" *ngFor="let project of projects; let i = index">
+                <div class="portfolio-box shadow">
+                    <a class="link-project" href="{{ project.link }}">
+                        <img src="./assets/images/projects/portfolio-{{ i + 1 }}.jpg" alt="{{ project.project }} image" title="{{ project.project }}" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4 class=" text-dark">{{ project.project }}</h4>
+                            <p class=" text-dark">{{ project.category }}</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a class="link-project" href="">
+            <div class="archives mt-5">
+                <h3>Archives</h3>
+            </div>
+        </a>
     </div>
 </section>

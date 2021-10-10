@@ -28,7 +28,7 @@
                     </svg>
                 </div>
                 <div class="contact-box__info">
-                    <a href="" class="contact-box__info--title" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <a (click)="openDialogChat()" class="contact-box__info--title">
                         keenndjc@gmail.com
                     </a>
                     <p class="contact-box__info--subtitle">Online support</p>
@@ -47,7 +47,7 @@
                     </svg>
                 </div>
                 <div class="contact-box__info">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#mapboxModal" class="contact-box__info--title">Douala, Cameroon</a>
+                    <a (click)="openDialogMap()" class="contact-box__info--title">Douala, Cameroon</a>
                     <p class="contact-box__info--subtitle">3PHF+FM Douala</p>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                 <hr style="width: 60px; height: 2px;" class="bg-white d-inline-block mb-4">
                 <ul class="list-inline campany-list">
                     <li>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        <a href (click)="openDialogChat()">
                             Message
                         </a>
                     </li>
@@ -159,56 +159,7 @@
 </footer>
 
 <!-- BACK TO TOP BUTTON -->
-<a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="shadow btn-primary rounded-circle back-to-top">
+<a href (click)="openDialogChat()" class="shadow btn-primary rounded-circle back-to-top">
     <!-- <i class="fas fa-chevron-up"></i> -->
     <i class="bi fs-4 bi-chat-left-text text"></i>
 </a>
-
-<!-- CONTACT US -->
-<div class="modal fade text-dark" id="contactModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="contactModalTitle">
-                    Contact Us
-                </h5>
-            </div>
-            <div class="modal-body">
-                <form id="modal">
-                    <div class="form-group">
-                        <label for="nameMessage">Name</label>
-                        <input id="nameMessage" type="text" class="form-control">
-                    </div>
-                    <div class="form-group my-3">
-                        <label for="emailMessage">Email</label>
-                        <input id="emailMessage" type="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="messageModal" class="form-control"></textarea>
-                    </div>
-                    
-                    <div class="modal-footer">
-                        <a href="#" id="sendMessage" class="rounded-pill btn-outline btn-rounded border-primary">
-                            submit
-                            <i class="fas fa-paper-plane"></i>
-                        </a>
-                    </div>
-
-                    <span class="flash-message text-secondary fst-italic lead"></span>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- MAPBOXGL FOR LOCATION -->
-<div class="modal fade text-dark" id="mapboxModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div id="map"></div>
-            </div>
-        </div>
-    </div>
-</div>

@@ -1,0 +1,16 @@
+@use '../../../../sass/custom' as *;
+
+.skew {
+    @include media-breakpoint-up(xs) {
+        width: 90%;
+        height: 110px;
+        margin: auto;
+    }
+    @include media-breakpoint-up(sm) {
+        height: 100px;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -18,6 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { FormDialogComponent } from './components/form-dialog/form-dialog.component';
+import { MapboxDialogComponent } from './components/mapbox-dialog/mapbox-dialog.component';
+import { DetailComponent } from './components/experiences/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
     FooterComponent,
     ContactComponent,
     PageNotFoundComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    FormDialogComponent,
+    MapboxDialogComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

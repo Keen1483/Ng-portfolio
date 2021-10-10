@@ -7,6 +7,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { DetailComponent } from './components/experiences/detail/detail.component';
 
 const routes: Routes = [
     {
@@ -32,6 +33,10 @@ const routes: Routes = [
     {
         path: 'contact',
         component: ContactComponent
+    },
+    {
+        path: 'experiences/:id',
+        component: DetailComponent
     },
     {
         path: '',

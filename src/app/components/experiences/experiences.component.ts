@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { TypographyService } from '../../services/typography.service';
 import { Subscription } from 'rxjs';
 import { ExperiencesService } from '../../services/experiences.service';
 import { Portfolio } from 'src/app/models/Portfolio.model';

@@ -10,7 +10,8 @@ mat-toolbar {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-top: 0.5rem;
+        padding-top: 1rem !important;
+        margin-top: 0.4rem;
 
         @include media-breakpoint-down(lg) {
             display: none;
@@ -45,6 +46,7 @@ mat-toolbar {
 
         .brand {
             text-align: right;
+            margin-top: 0.4rem;
 
             a {
                 text-decoration: none;

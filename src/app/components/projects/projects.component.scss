@@ -1,3 +1,39 @@
 .container {
-    margin-top: 5.5rem;
+    margin-top: 2rem;
+}
+
+@keyframes a-hover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.archives {
+    width: 20%;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.2rem 0;
+    transform: skewX(-45deg);
+    background-color: #FFD642;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+
+    &:hover {
+        background-color: darken(#FFD642, 10%);
+    }
+
+    h3 {
+        transform: skewX(45deg);
+        padding-top: 0.3rem;
+        text-transform: capitalize;
+        color: #202120;
+    }
+
+    
 }

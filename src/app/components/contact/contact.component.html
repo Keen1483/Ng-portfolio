@@ -8,36 +8,36 @@
         <div class="row text-white">
             <div class="col-12 col-lg-6 gradient shadow p-3">
                 <div class="cta-info w-100">
-                    <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+                    <h4 class="display-4 fw-bold">100% Satisfaction Guarantie</h4>
                     <p class="lh-lg">
-                        From the sketch, through the design and the prototypes to the final version, we will provide you daily reports to achieve the desired result. <br>
-                        At each report, we are waiting for your feedback to make an update.
+                        De la maquette, en passant par le design et les prototypes jusqu'à la version finale, nous vous fournirons des rapports quotidiens pour atteindre le résultat souhaité.
+                        À chaque rapport, nous attendons vos réactions pour effectuer une mise à jour. <br>
                     </p>
-                    <h3 class="display-3--brief">What will be the next step?</h3>
+                    <h3 class="display-3--brief">Quelle sera la prochaine étape?</h3>
                     <ul class="cta-info__list">
-                        <li>We'll prepare the proposal</li>
-                        <li>we'ill discuss it together</li>
-                        <li>let's start the discussion.</li>
+                        <li>Nous préparerons la proposition</li>
+                        <li>Nous en discuterons ensemble</li>
+                        <li>Commençons la discussion.</li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-lg-6 bg-white shadow p-3">
                 <div class="form w-100 pb-2">
-                    <h4 class="display-3--title mb-5">start your project</h4>
+                    <h4 class="display-3--title mb-5">La solution à vos projets</h4>
                     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row">
                         <!-- TITLE -->
                         <div class="form-group col-lg-12 mb-3">
-                            <input type="text" id="title" placeholder="Title project" class="form-control shadow form-control-lg" formControlName="title" minlength="5">
+                            <input type="email" id="email" placeholder="Adresse mail" class="form-control shadow form-control-lg" formControlName="email">
                         </div>
                         <!-- MESSAGE -->
                         <div class="form-group col-lg-12 mb-3">
-                            <textarea name="project" id="project" placeholder="Project description" rows="8" class="form-control shadow form-control-lg" formControlName="project" minlength="10"></textarea>
+                            <textarea name="message" id="message" placeholder="Message" rows="8" class="form-control shadow form-control-lg" formControlName="message" minlength="10"></textarea>
                         </div>
                         <div class="text-center d-grid mt-1">
                             <button type="submit"
                                     class="btn btn-primary rounded-pill py-3"
                                     [disabled]="contactForm.invalid">
-                                submit
+                                Envoyer
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
